@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import RickAndMortyApi from "./components/RickAndMortyApi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ background: "#24272D", minHeight: "100vh" }}>
+      <div
+        style={{
+          color: "white",
+          textAlign: "center",
+          fontSize: "3rem",
+          padding: ".3rem",
+        }}
+      >
+        <h2>Rick and Morty</h2>
+      </div>
+
+      <RickAndMortyApi />
     </div>
   );
 }
