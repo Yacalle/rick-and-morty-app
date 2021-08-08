@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.resident-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.resident-card {
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  background: #3b3d42;
+  color: white;
+  border-radius: 0.2rem;
+}
+.resident-card h3 {
+  font-size: 1.3rem;
+}
+.resident-card p {
+  color: #b6b6b6;
+  margin-bottom: 0.2rem;
+}
+.resident-card p span {
+  font-weight: bold;
+  color: #dedede;
+}
+/*Movile*/
+@media (min-width: 768px) {
+  .resident-card {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .resident-card-info {
+    padding-left: 0.5rem;
+  }
+  .resident-card-info h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .resident-card-info p {
+    font-size: 1.1rem;
+  }
+}

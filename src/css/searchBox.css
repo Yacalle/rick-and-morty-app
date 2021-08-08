@@ -1,0 +1,18 @@
+.container-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.location-container .location-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #38b376;
+  color: #000;
+}
+@media (min-width: 768px) {
+  .location-container .location-info {
+    width: 50%;
+    margin: auto;
+  }
+}
